@@ -1,0 +1,17 @@
+@media screen and (max-width: 992px){
+    .parallax{
+        display: none;
+    }
+    .mobile-skills{
+        display: block;
+        position: relative;
+    }
+
+    .mobile-img-container{
+        position: absolute;
+    }
+
+    .mobile-skills img{
+        width: 10%;
+    }
+}
