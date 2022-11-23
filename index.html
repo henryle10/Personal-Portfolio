@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<!--
+       __ ________   __   ____  __
+      / // / __/ /  / /  / __ \/ /
+     / _  / _// /__/ /__/ /_/ /_/
+    /_//_/___/____/____/\____(_)
+    
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry Le</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <!-- JS Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <script src="https://use.fontawesome.com/d8137843b7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <!-- Fullpage css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Slider Required Core Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+
+    <!-- Slider Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+
+    <!-- Transitions -->
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header -->
+    <div id="section">
+        <div id="HeaderContent" class="fixed-top">
+            <div class="container">
+                <nav class="topnav">
+                    <div class="navbar">
+                        <div class="topnav-left">
+                            <h1>HL</h1>
+                        </div>
+                        <div>
+                            <div class="topnav-right">
+                                <button type="button" class="navbar-toggler collapsed" onclick="openCollapse()"
+                                    data-bs-toggle="collapse">
+                                    <span class="toggler-icon top-bar"></span>
+                                    <span class="toggler-icon middle-bar"></span>
+                                    <span class="toggler-icon bottom-bar"></span>
+                                </button>
+                                <div id="collapsed" class="collapsedNav">
+                                    <a href="javascript:void(0)" class="closebtn2"
+                                        onclick="closeCollapse()">&times;</a>\
+                                    <ul>
+                                        <li><a id="move1" href="#">Home</a></li>
+                                        <li><a id="move2" href="#section2">About</a></li>
+                                        <li><a id="move3" href="#section3">Experience / Projects</a></li>
+                                        <li><a id="move4" href="#section4">Skills</a></li>
+                                        <li><a id="move5" href="#section5">Contact</a></li>
+                                        <li><a target="_blank" href="images/henry-le-resume.pdf">Resume</a></li>
+                                        <!-- <li>
+                                                <div id="toggleBox">
+                                                    <input type="checkbox" class="checkbox" id="checkbox">
+                                                    <label for="checkbox" class="label">
+                                                        <i class="fa fa-moon-o"></i>
+                                                        <i class="fa fa-sun-o"></i>
+                                                        <div class="ball"></div>
+                                                    </label>
+                                                </div>
+                                            </li> -->
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Main Page -->
+    <div class="container">
+        <div id="fullPage">
+            <div class="section s1">
+                <div data-aos="fade-up">
+                    <h6>Welcome! My name is,</h6>
+                    <h1>Henry Le</h1>
+                    <h2>Front-End Developer</h2>
+                </div>
+                <button id="moveDown" class="scroll-down"></button>
+            </div>
+            <div class="section s2">
+                <div class="row">
+                    <div class="col-lg-6 my-auto">
+                        <div class="about-text">
+                            <h1>About me</h1>
+                            <p>My name is Henry Le, and I am a self-driven Frontend Developer. I am eager
+                                to
+                                continue absorbing knowledge in the world of programming and determined to
+                                improve
+                                my problem solving skills. </p>
+                            <p> After completing the accelerated web development program at Coding Dojo, I have
+                                successfully
+                                earned
+                                my
+                                certificate while passing each exam with the highest possible grade. In
+                                addition, I
+                                have
+                                completed
+                                projects under my belt where I utilized all the skills I have learned. Now I am
+                                seeking
+                                potential
+                                opportunity to advance my proficiency and to move forward with my career while
+                                progressively
+                                challenging
+                                myself.</p>
+                            <h4>Experiences</h4>
+                            <p>I’ve had the privilege of working at a Custom Web Development, Design, Marketing,
+                                Application Building/Integration agency called <a
+                                    href="https://volatilestudios.com/">Volatile Studios</a>. At Volatile
+                                Studios I
+                                am a Web Developer and UI/UX Designer working with custom web development,
+                                design,
+                                application building/integration, multimedia, apps, content management systems,
+                                mobile interactivity and ecommerce platforms, I had the pleasure of
+                                working with many different clients as seen in my<a id="move3" href="#">
+                                    projects
+                                    section</a> </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="profile-container" data-aos="fade-left">
+                            <img class="about-desktop" src="images/PortfolioPic.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <button id="moveDown" class="scroll-down"></button>
+            </div>
+            <div class="section s3">
+                <h1>Experience / Projects</h1>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide my-auto" data-anchor="top">
+                                <a href="https://droptonic.com/" target="_blank">
+                                    <div class="project-cards">
+                                        <img src="images/droptonic.PNG" alt="">
+                                        <div class="project-details">
+                                            <h2>DropTonic</h2>
+                                            <p>Designed and developed an ecommerce website with complex components such
+                                                as intricate sliding animations using vanilla JS. Adopted a third-party
+                                                software
+                                                BigCommerce for our client's shop page.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="glide__slide my-auto" data-anchor="top">
+                                <a href="https://caltap.org/" target="_blank">
+                                    <div class="project-cards">
+                                        <img src="images/cltap.PNG" alt="">
+                                        <div class="project-details">
+                                            <h2>California LTAP</h2>
+                                            <p>Cooperated with California State University, Long Beach and CALTRANS to
+                                                revamp
+                                                the California State's LTAP existing website for a completely new look.
+                                                Resulting in
+                                                an intuitive experience and informational content.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="glide__slide" data-anchor="top">
+                                <a href="https://evgextracts.com/" target="_blank">
+                                    <div class="project-cards">
+                                        <img src="images/evg.PNG" alt="">
+                                        <div class="project-details">
+                                            <h2>EVG Extracts</h2>
+                                            <p>Mocked up and Built a brand new look for EVG extracts.
+                                                Implemented a couple
+                                                of entirely modern components, these were the "Services" page and
+                                                the "Build a Custom Product" page which are also in sync with each
+                                                other.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="glide__slide" data-anchor="top">
+                                <a href="https://bisabodycare.com/" target="_blank">
+                                    <div class="project-cards">
+                                        <img src="images/bisa.PNG" alt="">
+                                        <div class="project-details">
+                                            <h2>Bisa</h2>
+                                            <p>Revitalized entire site using existing components and client's feedback
+                                                to design
+                                                and construct a elegant website. Integrated Ecwid's API to allow
+                                                customers a quick
+                                                and secure purchase interaction.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="glide__slide" data-anchor="top">
+                                <a href="https://diamondrental.com/" target="_blank">
+                                    <div class="project-cards">
+                                        <img src="images/diamond-rentals.PNG" alt="">
+                                        <div class="project-details">
+                                            <h2>Diamond Rentals/Events</h2>
+                                            <p>Front-End Developer designated to draft and build out both Diamond owned
+                                                websites. One being equipment and the other being event rental services.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="glide__slide" data-anchor="top">
+                                <a href="https://apresparty.com/" target="_blank">
+                                    <div class="project-cards">
+                                        <img src="images/apres.PNG" alt="">
+                                        <div class="project-details">
+                                            <h2>Après</h2>
+                                            <p>Collaborated with client to produce a aesthetic and friendly user
+                                                experience
+                                                website. Working along with head backend supervisor to ensure smooth
+                                                ecommerce transactions.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="glide__slide" data-anchor="top">
+                                <a href="http://18.188.37.161/HowToPlay" target="_blank">
+                                    <div class="project-cards">
+                                        <img src="images/rocketship.PNG" alt="">
+                                        <div class="project-details">
+                                            <h2>Rocket Ship</h2>
+                                            <p>Rocket Ship is a randomly generated social card game, up to 10 players
+                                                allowed through different IP addresses.
+                                                Utilizing the functionality of object oriented programming and
+                                                version control.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="glide__slide" data-anchor="top">
+                                <a href="https://zeus-ecommerce.herokuapp.com/" target="_blank">
+                                    <div class="project-cards">
+                                        <img src="images/zeus.PNG" alt="">
+                                        <div class="project-details">
+                                            <h2>Zeus Ecommerce</h2>
+                                            <p>Zeus Ecommerce site is created to enable users to display their
+                                                own
+                                                products
+                                                on the platform to sell. This site utilizes redux for each click
+                                                to
+                                                be
+                                                quick
+                                                and seamless to the user.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <button id="moveDown" class="scroll-down"></button>
+            </div>
+            <div class="section s4">
+                <div class="parallax" data-aos="zoom-in" data-anchor="top">
+                    <h2>SKILLS</h2>
+                    <div class="layer">
+                        <img class="logo1" src="images/bootstrap-logo.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <img class="logo2" src="images/html.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <img class="logo3" src="images/cSharp.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <img class="logo4" src="images/css.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <img class="logo5" src="images/js.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <img class="logo6" src="images/node.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <img class="logo7" src="images/mongoose.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <img class="logo8" src="images/python.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <img class="logo9" src="images/react.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <img class="logo10" src="images/adobexd.png" alt="">
+                    </div>
+                    <div class="layer">
+                        <img class="logo11" src="images/sass.png" alt="">
+                    </div>
+                </div>
+                <div class="mobile-skills">
+                    <h1>Skills</h1>
+                    <div class="mobile-flex">
+                        <ul>
+                            <li><img src="images/bootstrap-logo.png" alt="bootstrap"></li>
+                            <li><img src="images/html.png" alt="html">
+                            </li>
+                            <li><img src="images/cSharp.png" alt="c#">
+                            </li>
+                            <li><img src="images/css.png" alt="css">
+                            </li>
+                            <li><img src="images/js.png" alt="js"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="images/node.png" alt="node">
+                            </li>
+                            <li><img src="images/mongoose.png" alt="mongoose"></li>
+                            <li><img src="images/python.png" alt="python"></li>
+                            <li><img src="images/react.png" alt="react">
+                            </li>
+                            <li><img src="images/adobexd.png" alt="adobe xd"></li>
+                            <li><img src="images/sass.png" alt="sass"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hidden-keywords">
+                    <ul>
+                        <li>C Sharp</li>
+                        <li>C#</li>
+                        <li>MERN</li>
+                        <li>Python</li>
+                        <li>javascript</li>
+                        <li>Node</li>
+                        <li>Mongoose</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Adobe XD</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <button id="moveDown" class="scroll-down"></button>
+            </div>
+            <div class="section s5 contact">
+                <div>
+                    <h1>Get In Touch</h1>
+                    <a href="mailto:hhle812@gmail.com"><button class="msg-btn">Message Me!</button></a>
+                </div>
+                <button id="moveUp" class="scroll-up"></button>
+                <div class="footer">
+                    <hr>
+                    <ul class="copyright">
+                        <li class="my-auto">© COPYRIGHT 2022. ALL RIGHTS RESERVED. WEBSITE DESIGNED BY HENRY LE
+                        </li>
+                        <div class="bottom-links">
+                            <a href="https://github.com/henryle10"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/henryle10/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Main Page -->
+
+    <script>
+        // Script for carousel sliders
+        const config = {
+            type: 'slider',
+            perView: 3,
+            focusAt: 'center',
+            gap: 40,
+            breakpoints: {
+                1200: {
+                    perView: 2
+                },
+                800: {
+                    perView: 1
+                }
+            }
+        };
+        const config2 = {
+            type: 'carousel',
+            perView: 1
+        };
+        new Glide('.glide', config).mount();
+        new Glide('.glide2', config2).mount();
+    </script>
+
+    <script>
+        // Animations initialize
+        AOS.init({
+            duration: 700,
+        })
+
+        let samt = 0;
+        window.addEventListener('scroll', function () {
+            samt <= 10 ? samt++ : AOS.refresh();
+        });
+
+        // Page loading animation
+        window.addEventListener('load', AOS.refresh)
+
+        $(window).on("load", function () {
+            if ($(".cover").length) {
+                $(".cover").parallax({
+                    imageSrc: $(".cover").data("image"),
+                    zIndex: "1"
+                });
+            }
+
+            $("#preloader").animate(
+                {
+                    opacity: "0"
+                },
+                1000,
+                function () {
+                    setTimeout(function () {
+                        $("#preloader")
+                            .css("visibility", "hidden")
+                            .fadeOut();
+                    }, 2000);
+                }
+            );
+        });
+
+        // Script for full page scroll
+        $(document).ready(function () { $('#fullpage').fullpage(); });
+
+        new fullpage('#fullPage', {
+            autoScrolling: true,
+            navigation: true,
+            anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
+            navigationTooltips: ['Home', 'About', 'Experience / Projects', 'Skills', 'Contact'],
+            showActiveTooltips: true,
+            scrollingSpeed: 800,
+            onLeave: function () {
+                jQuery('.section [data-aos]').removeClass("aos-animate");
+            },
+            onSlideLeave: function () {
+                jQuery('.slide [data-aos]').removeClass("aos-animate");
+            },
+            afterSlideLoad: function () {
+                jQuery('.slide.active [data-aos]').addClass("aos-animate");
+            },
+            afterLoad: function () {
+                $('.fp-table.active .aos-init').addClass('aos-animate');
+            }
+        });
+        $(document).on('click', '#moveDown', function () {
+            fullpage_api.moveSectionDown();
+        });
+        $(document).on('click', '#moveUp', function () {
+            fullpage_api.moveTo('section1');
+        });
+
+        // Parallax 
+        var currentX = '';
+        var currentY = '';
+        var movementConstant = .025;
+
+        $(document).mousemove(function (e) {
+            if (currentX == '') currentX = e.pageX;
+            var xdiff = e.pageX - currentX;
+            currentX = e.pageX;
+            if (currentY == '') currentY = e.pageY;
+            var ydiff = e.pageY - currentY;
+            currentY = e.pageY;
+
+            $('.parallax div').each(function (i, el) {
+                var movement = (i + 1) * (xdiff * movementConstant);
+                var movementy = (i + 1) * (ydiff * movementConstant);
+                var newX = $(el).position().left + movement;
+                var newY = $(el).position().top + movementy;
+                var cssObj = {
+                    'left': newX + 'px',
+                    'top': newY + 'px'
+                };
+
+                $(el).css({
+                    "transform": "translate(" + newX + "px," + newY + "px)"
+                });
+            });
+        });
+
+        // Navbar functions
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "500px";
+            document.body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        function openCollapse() {
+            if ($(window).width() < 992) {
+                document.getElementById("collapsed").style.width = "70%";
+            }
+            if ($(window).width() > 992) {
+                document.getElementById("collapsed").style.width = "25%";
+            }
+        }
+
+        function closeCollapse() {
+            document.getElementById("collapsed").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        $(document).on('click', '#move1', function () {
+            fullpage_api.moveTo('section1');
+            closeCollapse();
+        });
+        $(document).on('click', '#move2', function () {
+            fullpage_api.moveTo('section2');
+            closeCollapse();
+        });
+        $(document).on('click', '#move3', function () {
+            fullpage_api.moveTo('section3');
+            closeCollapse();
+        });
+        $(document).on('click', '#move4', function () {
+            fullpage_api.moveTo('section4');
+            closeCollapse();
+        });
+        $(document).on('click', '#move5', function () {
+            fullpage_api.moveTo('section5');
+            closeCollapse();
+        });
+
+        // Dark Mode
+        const checkbox = document.getElementById('checkbox');
+        checkbox.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
+
+</html>
